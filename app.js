@@ -8,7 +8,7 @@ function loadMarkers(){
 	
 	// Upadate tracking image URL
 	let baseUrl = "https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/sandeepkronline/webar/main/track/";
-	let nftUrl = baseUrl + trakingId + "\" + trakingId;
+	let nftUrl = baseUrl + trakingId + "/" + trakingId;
 	console.log(nftUrld);
 	var nftNode = document.getElementById("#marker");
 

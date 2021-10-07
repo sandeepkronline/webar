@@ -3,12 +3,12 @@ function loadMarkers(){
 	const urlParams = new URLSearchParams(window.location.search)
 	let imageId = urlParams.get("image")
 	let markerId = urlParams.get("marker")
-	console.log(trakingId);
+	console.log(imageId);
 	console.log(markerId);
 	
 	// Upadate tracking image URL
 	let baseUrl = "https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/sandeepkronline/webar/main/track/";
-	let nftUrl = baseUrl + trakingId + "/" + trakingId;
+	let nftUrl = baseUrl + imageId + "/" + imageId;
 	console.log(nftUrld);
 	var nftNode = document.getElementById("#marker");
 

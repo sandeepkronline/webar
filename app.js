@@ -29,7 +29,7 @@ function loadMarkers(){
 		markerDiv.setAttribute("gltf-model", "models/3D/valentim.gltf");
 		markerDiv.setAttribute("scale", "10 10 10");
 		markerDiv.setAttribute("position", "50 50 0" );
-		markerDiv.setAttribute("rotation", "0 0 0" );
+		markerDiv.setAttribute("rotation", "0 0 90" );
 		
 	}
 	var element = document.getElementById("#marker");

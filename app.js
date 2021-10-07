@@ -35,6 +35,7 @@ function loadMarkers(){
 	var element = document.getElementById("#marker");
 	element.appendChild(markerDiv);
 		
-	
+	//https://carnaux.github.io/NFT-Marker-Creator/
+	//https://console.echo3d.co/#/pages/contentmanager
 }
 

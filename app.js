@@ -1,11 +1,20 @@
 function loadMarkers(){
+	// Get Query Parameters
 	const urlParams = new URLSearchParams(window.location.search)
-	let trakingId = urlParams.get("id")
+	let imageId = urlParams.get("image")
 	let markerId = urlParams.get("marker")
 	console.log(trakingId);
 	console.log(markerId);
 	
-	if( trakingId == "trex"){
+	// Upadate tracking image URL
+	let baseUrl = "https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/sandeepkronline/webar/main/track/";
+	let nftUrl = baseUrl + trakingId + "\" + trakingId;
+	console.log(nftUrld);
+	var nftNode = document.getElementById("#marker");
+
+	
+	
+	if( imageId == "trex"){
 		
 		const markerDiv = document.createElement("a-gltf-model");
 		markerDiv.setAttribute("gltf-model", "trex/scene.gltf");

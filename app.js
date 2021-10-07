@@ -23,7 +23,7 @@ function loadMarkers(){
 		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "5 5 5");
 		markerDiv.setAttribute("position", "0 0 0" );
-		markerDiv.setAttribute("rotation", "90 0 0" );	
+		markerDiv.setAttribute("rotation", "0 0 0" );	
 	}
 	else{
 		markerDiv.setAttribute("gltf-model", "models/3D/valentim.gltf");

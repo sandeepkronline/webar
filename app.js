@@ -11,28 +11,29 @@ function loadMarkers(){
 	let nftUrl = baseUrl + imageId + "/" + imageId;
 	console.log(nftUrl);
 	var nftNode = document.getElementById("#marker");
+	nftNode.setAttribute("url", nftUrl);
 
-	
-	
-	if( imageId == "trex"){
-		
-		const markerDiv = document.createElement("a-gltf-model");
-		markerDiv.setAttribute("gltf-model", "trex/scene.gltf");
+	const markerDiv = document.createElement("a-gltf-model");
+	if( markerId == "1"){
+		markerDiv.setAttribute("gltf-model", "models/3D/melite.gltf");
 		markerDiv.setAttribute("scale", "5 5 5");
-		markerDiv.setAttribute("position", "50 0 0" );
-		var element = document.getElementById("#marker");
-		element.appendChild(markerDiv);
+		markerDiv.setAttribute("position", "50 0 0" );	
 	}
-	else{
-		const markerDiv = document.createElement("a-gltf-model");
-		markerDiv.setAttribute("gltf-model", "trex/skyscraper.gltf");
+	else if (markerId == "2"){
+		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "5 5 5");
 		markerDiv.setAttribute("position", "50 50 0" );
-		markerDiv.setAttribute("rotation", "90 270 0" );
-		var element = document.getElementById("#marker");
-		element.appendChild(markerDiv);
+		markerDiv.setAttribute("rotation", "90 180 90" );	
+	}
+	else{
+		markerDiv.setAttribute("gltf-model", "models/3D/valentim.gltf");
+		markerDiv.setAttribute("scale", "5 5 5");
+		markerDiv.setAttribute("position", "50 50 0" );
+		markerDiv.setAttribute("rotation", "90 180 90" );
 		
 	}
+	var element = document.getElementById("#marker");
+	element.appendChild(markerDiv);
 		
 	
 }

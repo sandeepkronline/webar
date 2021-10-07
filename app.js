@@ -16,14 +16,14 @@ function loadMarkers(){
 	const markerDiv = document.createElement("a-gltf-model");
 	if( markerId == "1"){
 		markerDiv.setAttribute("gltf-model", "models/3D/melite.gltf");
-		markerDiv.setAttribute("scale", "20 20 20");
+		markerDiv.setAttribute("scale", "50 50 50");
 		markerDiv.setAttribute("position", "0 0 0" );	
 	}
 	else if (markerId == "2"){
 		markerDiv.setAttribute("gltf-model", "models/3D/skyscraper.gltf");
 		markerDiv.setAttribute("scale", "5 5 5");
-		markerDiv.setAttribute("position", "50 50 0" );
-		markerDiv.setAttribute("rotation", "90 180 90" );	
+		markerDiv.setAttribute("position", "0 0 0" );
+		markerDiv.setAttribute("rotation", "90 0 0" );	
 	}
 	else{
 		markerDiv.setAttribute("gltf-model", "models/3D/valentim.gltf");

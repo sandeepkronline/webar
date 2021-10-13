@@ -6,6 +6,10 @@
 
 <body>
   <a-scene>
-    <a-entity position="0 2 -4" rotation="0 25 0" geometry="primitive:plane;" material="shader:gif;src:url(https://media.giphy.com/media/gw3IWyGkC0rsazTi/giphy.gif)"></a-entity>
+        <a-assets>
+        <img id="banana" src="P-09_Osaka.gif">
+      </a-assets>
+	  
+    <a-entity position="0 2 -4" rotation="0 25 0" geometry="primitive:plane;" material="shader:gif;src:url(#banana)"></a-entity>
   </a-scene>
 </body> 

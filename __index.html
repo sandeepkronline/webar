@@ -1,0 +1,23 @@
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>A-Frame GIF Shader - Basic</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="build.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css"/>
+  </head>
+
+  <body>
+    <a-scene>
+
+      <!-- assets -->
+      <a-assets>
+        <img id="banana" src="P-09_Osaka.gif">
+      </a-assets>
+
+     
+        <!-- banana -->
+        <a-entity geometry="primitive:plane;width:2;height:2;" position="-1.2 -2.125 -1" material="shader:gif;src:banana.gif";repeat: 2 2;alphaTest:0.5;"></a-entity>
+        
+    </a-scene>
+  </body>

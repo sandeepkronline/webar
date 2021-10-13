@@ -1,12 +1,30 @@
-<head>
-  <title>My A-Frame Scene</title>
-  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-  <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>A-Frame GIF Shader - Basic</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="build.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css"/>
+  </head>
 
-<body>
-  <a-scene>
-    <a-entity geometry="primitive:box" material="shader:gif;src:url(P-09_Osaka.gif);" gif=""></a-entity>
-  </a-scene>
-</body>
+  <body>
+    <a-scene>
+
+      <!-- assets -->
+      <a-assets>
+        <img id="nyancat" src="nyancat.gif">
+        <img id="pusheen" src="pusheen.gif">
+        <img id="banana" src="banana.gif">
+      </a-assets>
+
+      <a-entity position="0 0 -5">
+        <!-- banana -->
+        <a-entity geometry="primitive:plane;width:2;height:2;" position="-1.2 -2.125 -1" material="shader:gif;src:#banana;repeat: 2 2;alphaTest:0.5;"></a-entity>
+        <a-entity geometry="primitive:plane;width:2;height:2;" position="1.2 -2.125 -1" material="shader:gif;src:#banana;alphaTest:0.5;"></a-entity>
+      <!-- sky -->
+      <a-sky color="pink"></a-sky>
+    </a-scene>
+    <div id="buttons" class="buttons"></div>
+    <div class="spacer"></div>
+    <div class="spacer2"></div>
+  </body>
